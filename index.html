@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="credentials.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Asset Management</h1>
+  <form id="assetForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="place">Place:</label>
+    <input type="text" id="place" name="place" required><br>
+    <label for="expense1">Expense 1:</label>
+    <input type="number" id="expense1" name="expense1" required><br>
+    <label for="expense2">Expense 2:</label>
+    <input type="number" id="expense2" name="expense2" required><br>
+    <button type="submit">Add/Update Asset</button>
+    <input type="hidden" id="rowIndex">
+  </form>
+  <h2>Asset List</h2>
+  <ul id="assetList"></ul>
+  <button id="authorize_button" style="display: none;">Authorize</button>
+  <button id="signout_button" style="display: none;">Sign Out</button>
+</body>
+</html>
